@@ -7,7 +7,7 @@ MAINTAINER Gabriel Malet
 # Copy custom configuration file from the current directory
 COPY nginx.conf /etc/nginx/nginx.conf
 RUN mkdir -p /etc/nginx/site-enabled
-COPY site-enabled/stream-scraper /etc/nginx/site-enabled/stream-scraper
+COPY site-enabled/stream-scraper /etc/nginx/stream-scraper.conf
 
 # Expose ports
 EXPOSE 443
